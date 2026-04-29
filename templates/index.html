@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Safety Checker</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            text-align: center;
+            color: white;
+            margin-top: 150px;
+        }
+        input {
+            width: 400px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            padding: 10px;
+        }
+        button {
+            height: 45px;
+            width: 120px;
+            border-radius: 8px;
+            border: none;
+            background: #00c6ff;
+            color: white;
+            font-weight: bold;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>URL Safety Checker</h1>
+
+<form method="POST">
+    <input type="text" name="url" placeholder="Enter URL..." required>
+    <br><br>
+    <button type="submit">Check</button>
+</form>
+
+<div class="result">
+    {{ result }}
+</div>
+
+</body>
+</html>
